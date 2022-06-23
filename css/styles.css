@@ -15,9 +15,16 @@ body {
   letter-spacing: 0.03em;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
@@ -26,13 +33,13 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+  padding: 24px 0 25px 0;
 }
 
 .header .container {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-  padding: 24px 0 25px 0;
 }
 
 .navigation {
@@ -92,6 +99,7 @@ body {
 .menu-contacts {
   margin: 0;
   padding: 0;
+  margin-left: 254px;
 }
 
 .menu-contacts-item {
@@ -109,6 +117,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
   text-decoration: none;
+  margin-left: ;
+  margin-right: 50px;
 }
 
 .menu-contacts-link:hover {
@@ -119,18 +129,17 @@ body {
   color: var(--accent-color);
 }
 
-.hero {
-  background-color: var(--section-background-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
-.hero-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: calc(200px - 94px);
-  padding-bottom: calc(280px - 94px);
+.hero {
+  background-color: var(--section-background-color);
+  text-align: center;
+  padding: 200px 0;
 }
 
 .title {
@@ -138,6 +147,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  margin: 0 auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondory-color);
@@ -150,9 +160,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--secondory-color);
   background: var(--accent-color);
@@ -160,6 +167,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 32px;
+  border: none;
 }
 
 .benefits-list {
@@ -171,6 +179,7 @@ body {
 
 .benefits-list-item {
   list-style: none;
+  width: 270px;
 }
 
 .benefits-title {
@@ -185,6 +194,10 @@ body {
 .benefits-description {
   line-height: 1.71;
   color: var(--paragraph-color);
+}
+
+.description section {
+  padding-top: 0;
 }
 
 .subtitle {
@@ -213,6 +226,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 
 .team {
@@ -239,7 +253,7 @@ body {
   font-size: 16px;
   line-height: 1.18;
   color: var(--paragraph-color);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -249,15 +263,12 @@ body {
 
 .footer .container {
   display: block;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .footer {
   background-color: var(--section-background-color);
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 60px 0;
 }
 
 .footer-content {
@@ -267,12 +278,12 @@ body {
 
 .footer-contacts {
   font-style: normal;
+  margin: 20px 0 0 0;
 }
 
 .footer-contacts-list {
   list-style: none;
-  margin: 20px 0px 0px 0px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 .footer-address {
@@ -284,7 +295,10 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  padding-bottom: 60px;
+}
+
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .menu-portfolio {
@@ -293,6 +307,7 @@ body {
   margin: 0;
   padding: 0;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .menu-portfolio-button {
@@ -334,8 +349,7 @@ body {
 }
 
 .list-portfolio-photo {
-  margin-top: 34px;
-  border: 1px solid #eeeeee;
+  margin-top: 30px;
 }
 
 .title-portfolio {
@@ -345,9 +359,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-color);
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 0;
-  margin-left: 24px;
 }
 
 .subtitle-portfolio {
@@ -356,5 +367,10 @@ body {
   color: var(--paragraph-color);
   margin-top: 4px;
   text-align: left;
-  margin-left: 24px;
+}
+
+.list-portfolio-photo div {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
