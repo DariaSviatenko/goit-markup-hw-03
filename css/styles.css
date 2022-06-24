@@ -15,6 +15,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -99,7 +103,7 @@ ul {
 .menu-contacts {
   margin: 0;
   padding: 0;
-  margin-left: 254px;
+  margin-left: auto;
 }
 
 .menu-contacts-item {
@@ -117,8 +121,6 @@ ul {
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
   text-decoration: none;
-  margin-left: ;
-  margin-right: 50px;
 }
 
 .menu-contacts-link:hover {
@@ -189,6 +191,7 @@ p {
   text-transform: uppercase;
   color: var(--primary-color);
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .benefits-description {
@@ -208,11 +211,11 @@ p {
   color: var(--primary-color);
   margin-top: 0;
   margin-bottom: 50px;
+  padding-top: 0;
 }
 
 .subtitle-list {
   display: flex;
-  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -221,12 +224,26 @@ p {
   list-style: none;
 }
 
+.subtitle-item-occupation:not(:last-child) {
+  margin-right: 30px;
+}
+
+.description-photo {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+
 .subtitle-item {
   list-style: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
+}
+
+.subtitle-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team {
@@ -247,6 +264,7 @@ p {
   color: var(--primary-color);
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-function {
@@ -259,11 +277,6 @@ p {
 
 .highlight-white {
   color: var(--secondory-color);
-}
-
-.footer .container {
-  display: block;
-  padding: 60px 0;
 }
 
 .footer {
@@ -346,6 +359,7 @@ p {
   gap: 30px;
   padding: 0;
   list-style: none;
+  margin-top: 0;
 }
 
 .list-portfolio-photo {
